@@ -1,0 +1,55 @@
+#  Testing its functionalities in a controlled setting
+
+== Hands-on Lab: Testing the Command-Line Assistant Powered by RHEL Lightspeed
+
+In this hands-on lab, you will learn how to test the functionalities of the command-line assistant powered by RHEL Lightspeed in a controlled setting. This process will help you understand its capabilities and limitations, ensuring you can effectively utilize it for your RHEL systems.
+
+### Prerequisites
+
+1. A Red Hat Enterprise Linux (RHEL) system with RHEL Lightspeed installed and configured.
+2. Basic understanding of the RHEL command line.
+3. Access to the internet or a proxy system for connecting to the RHEL Lightspeed service.
+
+### Step 1: Setting up a Test Environment
+
+Create a dedicated virtual machine (VM) or use an existing one for testing purposes. Ensure that this environment is isolated from your production systems to avoid any unintended changes.
+
+### Step 2: Installing and Configuring the Command-Line Assistant
+
+Follow these steps to install and configure the command-line assistant powered by RHEL Lightspeed:
+
+1. Update your RHEL system:
+
+   ```
+   sudo subscription-manager repos --enable=rhel-8-for-x86_64-appstream-rpms
+   sudo dnf update -y
+   ```
+
+2. Install the RHEL Lightspeed command-line assistant:
+
+   ```
+   sudo dnf install -y rhel-lightsspeed-cli
+   ```
+
+3. Configure the command-line assistant by following the on-screen instructions. You will need to register your system with RHEL Lightspeed and obtain an access token.
+
+### Step 3: Testing Functionalities
+
+Now that the command-line assistant is installed and configured, let's test its functionalities:
+
+1. **Answering Questions:**
+
+   Ask the command-line assistant a question related to RHEL configuration or troubleshooting. For example:
+
+   ```
+   rhel-lightsspeed-cli "How do I enable SELinux in enforcing mode?"
+   ```
+
+   The assistant should provide a clear, step-by-step response.
+
+2. **Troubleshooting:**
+
+   Describe a hypothetical issue you are facing with your RHEL system, and ask the command-line assistant for suggestions. For instance:
+
+   ```
+   rhel-lightsspeed-cli "My system is experiencing slow performance. What could be the cause

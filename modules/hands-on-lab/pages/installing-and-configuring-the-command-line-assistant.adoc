@@ -1,0 +1,43 @@
+#  Installing and configuring the command-line assistant
+
+== Installing and Configuring the Command-Line Assistant
+
+The command-line assistant powered by RHEL Lightspeed is a valuable tool for Red Hat Enterprise Linux (RHEL) users, providing assistance with various tasks, troubleshooting, and understanding log files. To harness its capabilities, you must first install and configure it on your RHEL system. This section will guide you through the installation process and basic configuration settings.
+
+### Prerequisites
+
+Before proceeding with the installation, ensure that:
+
+1. You have a subscribed RHEL system. For more information on system registration, refer to the [Getting Started with RHEL System Registration](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/getting_started_with_the_rhel_8_web_console/index) documentation.
+2. The command-line assistant is supported on the following architectures: AMD and Intel 64-bit (x86_64), ARM64 (aarch64), IBM Z (s390x), and IBM POWER systems (ppc64).
+
+### Installation
+
+To install the command-line assistant, use the `dnf` package manager from the official RHEL repositories. Run the following command as a root or sudo user:
+
+```bash
+sudo dnf install command-line-assistant
+```
+
+Red Hat does not support using the `pip install command-line-assistant` command, so avoid this method.
+
+### Verification
+
+After the installation, verify that the command-line assistant is correctly installed by running:
+
+```bash
+c "How to install python?"
+```
+
+This command should return a response with instructions on how to install Python on your RHEL system.
+
+### Basic Configuration
+
+The command-line assistant comes with default settings suitable for most use cases. However, you can modify its behavior by adjusting the configuration file. The main configuration file is located at `/etc/command-line-assistant/config.yaml`.
+
+#### Setting Up a Proxy Configuration
+
+If your system requires a proxy to access external resources, you can configure the command-line assistant to use the proxy. Add the following lines to the `config.yaml` file, replacing `<proxy_url>` and `<port>` with your actual proxy details:
+
+```yaml
+http_proxy: <proxy_url>:<port>

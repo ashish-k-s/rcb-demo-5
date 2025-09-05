@@ -1,0 +1,64 @@
+#  Setting up a test environment for RHEL Lightspeed
+
+== Hands-on Lab: Setting up a test environment for RHEL Lightspeed
+
+To effectively demonstrate the capabilities of the command-line assistant powered by RHEL Lightspeed, it's essential to set up a test environment. This hands-on lab will guide you through creating a controlled environment where you can install and configure the command-line assistant, and test its functionalities.
+
+### Prerequisites
+
+Before starting this lab, ensure you have the following:
+
+1. A Red Hat Enterprise Linux (RHEL) 10 system (physical or virtual)
+2. Access to the Red Hat Customer Portal for downloading necessary packages
+3. Basic knowledge of RHEL command-line interface (CLI)
+
+### Step 1: Update your RHEL 10 system
+
+Begin by updating your RHEL 10 system to ensure you have the latest packages and security patches. Open a terminal and run the following commands:
+
+```bash
+sudo su -
+# Update the system
+dnf update -y
+```
+
+### Step 2: Register your system with Red Hat Subscription Management
+
+Register your RHEL 10 system with Red Hat Subscription Management to access necessary repositories and packages. Execute the following commands:
+
+```bash
+# Register the system
+subscription-manager register --username <your_username> --password <your_password>
+
+# Attach your system to a subscription pool
+subscription-manager attach --pool=<pool_id>
+```
+
+Replace `<your_username>`, `<your_password>`, and `<pool_id>` with your actual Red Hat credentials and pool ID.
+
+### Step 3: Enable the necessary repositories
+
+Enable the required repositories for installing the command-line assistant powered by RHEL Lightspeed. Run the following commands:
+
+```bash
+# Enable the AppStream repository
+subscription-manager repos --enable=appstream
+
+# Enable the BaseOS repository
+subscription-manager repos --enable=baseos
+```
+
+### Step 4: Install the command-line assistant powered by RHEL Lightspeed
+
+Now, install the command-line assistant using the `dnf` package manager:
+
+```bash
+dnf install -y rhel-lightsspeed-cli
+```
+
+### Step 5: Verify the installation
+
+Verify that the command-line assistant has been installed correctly by checking its version:
+
+```bash
+rls --version

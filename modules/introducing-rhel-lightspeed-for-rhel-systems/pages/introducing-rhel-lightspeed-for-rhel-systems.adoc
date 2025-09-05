@@ -1,0 +1,9 @@
+#   Introducing RHEL Lightspeed for RHEL Systems
+
+- **RHEL Lightspeed for RHEL Systems** is an AI-driven solution that enhances the management and troubleshooting of Red Hat Enterprise Linux (RHEL) systems.
+  - It includes a **Command-Line Assistant** powered by RHEL Lightspeed, which provides expert guidance to users.
+  - The assistant can answer questions, offer troubleshooting steps, interpret log files, and suggest recommendations.
+  - It leverages the WatsonX AI API's Large Language Model (LLM), deployed as a SaaS external infrastructure, to deliver accurate and relevant responses.
+  - This tool is designed to streamline the configuration, management, and maintenance of RHEL deployments.
+  - Users interact with the command-line assistant directly from the terminal, making it an integral part of the RHEL ecosystem.
+  - RHEL Lightspeed can also be provisioned to RHEL deployments managed by Red Hat Satellite for broader system coverage.

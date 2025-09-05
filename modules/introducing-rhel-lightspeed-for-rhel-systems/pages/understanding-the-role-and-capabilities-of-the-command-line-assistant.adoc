@@ -1,0 +1,29 @@
+#  Understanding the role and capabilities of the command-line assistant
+
+== Understanding the Role and Capabilities of the Command-Line Assistant
+
+The command-line assistant, powered by RHEL Lightspeed, is an innovative tool designed to simplify and enhance the interaction with Red Hat Enterprise Linux (RHEL) systems. It serves as a user-friendly interface that combines the power of natural language processing with the robust capabilities of RHEL, making complex tasks more accessible and straightforward.
+
+**Role of the Command-Line Assistant**
+
+The primary role of the command-line assistant is to act as an interactive problem-solver and information provider for RHEL system administrators and users. It assists in various tasks, including:
+
+- **Solving Issues:** The command-line assistant can help diagnose and resolve system issues by providing context-aware suggestions and guidance based on the user's queries.
+
+- **Implementing New RHEL Features:** It aids in understanding and implementing new features or updates in RHEL by offering step-by-step instructions and explanations.
+
+- **Finding Information:** Users can ask questions about RHEL functionalities, commands, or configurations, and the assistant will provide accurate and relevant information.
+
+- **Interactive Workflows:** The assistant supports interactive workflows, enabling users to run commands and then receive assistance in understanding the output and potential next steps.
+
+**Capabilities of the Command-Line Assistant**
+
+The command-line assistant boasts several key capabilities that make it an indispensable tool for RHEL system management:
+
+1. **Natural Language Processing:** Unlike traditional command-line interfaces that require specific syntax and commands, the command-line assistant understands and responds to plain language. This feature makes it more intuitive and accessible for users of varying technical levels.
+
+2. **Offline Functionality:** The assistant does not require direct internet connectivity. This capability is particularly beneficial in environments where internet access for individual systems is restricted or undesirable. Instead, requests can be proxied through a single internet-connected system.
+
+3. **Conversation History and Logging:** The command-line assistant maintains complete transcripts of all conversations, including user queries, system responses, and any referenced documentation or system instructions. This feature allows users to review past interactions, track issue resolution, and learn from previous queries.
+
+4. **Integration with Large Language Models (LLMs):** The assistant leverages LLMs to process user queries and generate responses. These models are

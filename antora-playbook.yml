@@ -1,6 +1,6 @@
 site:
-  title: FIXME Course Title
-  start_page: REPLACEREPONAME::index.adoc
+  title:  Providing Feedback on Red Hat Documentation: RHEL Lightspeed for RHEL Systems
+  start_page: rcb-demo-5::index.adoc
 
 content:
   sources:

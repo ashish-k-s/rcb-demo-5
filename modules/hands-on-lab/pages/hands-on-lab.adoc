@@ -1,0 +1,5 @@
+#  Hands-on Lab
+
+**Hands-on Lab**
+
+This lab provides a practical, hands-on experience with RHEL Lightspeed. Participants will learn to set up a test environment for RHEL Lightspeed, installing and configuring the command-line assistant. The lab will guide users through testing the assistant's functionalities in a controlled setting, enabling them to understand its capabilities in answering RHEL-related questions, troubleshooting, understanding log files, and receiving recommendations. This hands-on approach ensures a comprehensive understanding of the command-line assistant powered by RHEL Lightspeed.
